@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Garden Tools</title>
+<style>
+  :root {
+    --bg:#0c0c10; --panel:#14141b; --panel2:#1b1b24; --line:rgba(255,255,255,0.08);
+    --text:#e7e7ea; --dim:#9a9aa6; --faint:#6b6b78; --accent:#4ade80;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:28px 16px; background:var(--bg); color:var(--text);
+    font-family:"Outfit",system-ui,-apple-system,sans-serif; line-height:1.5;
+  }
+  .wrap { max-width:860px; margin:0 auto; }
+  h1 { font-size:24px; font-weight:750; margin:0 0 4px; }
+  .sub { color:var(--dim); font-size:13px; margin:0 0 22px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; }
+  .tool {
+    display:block; padding:15px 16px; background:var(--panel); border:1px solid var(--line);
+    border-radius:10px; color:var(--text); text-decoration:none;
+  }
+  .tool:hover { border-color:var(--accent); background:var(--panel2); }
+  .tool b { display:block; font-size:15px; margin-bottom:4px; }
+  .tool span { display:block; color:var(--dim); font-size:12px; }
+  .tag { display:inline-block; margin-top:10px; color:var(--faint); font-size:11px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Magic Garden Tools</h1>
+  <p class="sub">Quick links to Magic Garden tools.</p>
+
+  <div class="grid">
+    <a class="tool" href="https://discord.com/channels/808935495543160852/1490498595219308785/1490498595219308785">
+      <b>Garden Overview</b>
+      <span>Open the Garden Overview userscript post on Discord.</span>
+      <em class="tag">Userscript</em>
+    </a>
+    <a class="tool" href="https://liam0306dis.github.io/petfood/">
+      <b>Pet Feeding</b>
+      <span>Work out food plants and seeds needed to keep pets fed.</span>
+      <em class="tag">Calculator</em>
+    </a>
+    <a class="tool" href="https://liam0306dis.github.io/magiccalc/">
+      <b>Granter</b>
+      <span>Estimate pet ability chances, wait times, and egg growth boosts.</span>
+      <em class="tag">Calculator</em>
+    </a>
+    <a class="tool" href="https://liam0306dis.github.io/magic-dust-calc/">
+      <b>Magic Dust</b>
+      <span>Estimate pet dust value and expected dust from eggs.</span>
+      <em class="tag">Calculator</em>
+    </a>
+    <a class="tool" href="https://liam0306dis.github.io/capsule-calc/">
+      <b>Dawn Capsule</b>
+      <span>Estimate capsules per Dawn and compare capture cadence options.</span>
+      <em class="tag">Calculator</em>
+    </a>
+    <a class="tool" href="https://liam0306dis.github.io/farm-projection/">
+      <b>Farm Projection</b>
+      <span>Project a farm's finished value and the time needed to get there.</span>
+      <em class="tag">Calculator</em>
+    </a>
+  </div>
+</main>
+</body>
+</html>
