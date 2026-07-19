@@ -17,10 +17,10 @@
   .wrap { max-width:860px; margin:0 auto; }
   h1 { font-size:24px; font-weight:750; margin:0 0 4px; }
   .sub { color:var(--dim); font-size:13px; margin:0 0 22px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; }
+  .grid { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
   .tool {
     display:block; padding:15px 16px; background:var(--panel); border:1px solid var(--line);
-    border-radius:10px; color:var(--text); text-decoration:none;
+    border-radius:10px; color:var(--text); text-decoration:none; flex:1 1 240px; max-width:280px;
   }
   .tool:hover { border-color:var(--accent); background:var(--panel2); }
   .tool b { display:block; font-size:15px; margin-bottom:4px; }
@@ -28,8 +28,8 @@
   .tag { display:inline-block; margin-top:10px; color:var(--faint); font-size:11px; }
   @media (max-width:520px) {
     body { padding:20px 10px; }
-    .grid { grid-template-columns:minmax(0,1fr); gap:10px; }
-    .tool { padding:13px 14px; }
+    .grid { gap:10px; }
+    .tool { flex-basis:100%; max-width:none; padding:13px 14px; }
   }
 </style>
 </head>
@@ -82,6 +82,11 @@
     <a class="tool" href="https://liam0306dis.github.io/celestial-layout/">
       <b>Celestial Layout Planner</b>
       <span>Generate DawnCelestial and MoonCelestial placements with mutation coverage priorities.</span>
+      <em class="tag">Planner</em>
+    </a>
+    <a class="tool" href="https://liam0306dis.github.io/garden-layout/">
+      <b>Garden Layout Planner</b>
+      <span>Plan your whole farm layout - plants, mutations and decorations.</span>
       <em class="tag">Planner</em>
     </a>
   </div>
